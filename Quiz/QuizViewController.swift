@@ -70,8 +70,7 @@ class QuizViewController: UIViewController {
             correctAnswer++
         }
         
-        
-        
+    
         //解いた問題数の合計が予め設定していた問題数に達したら結果画面へ
         if sum == questionNumber {
             performSegueToResult()

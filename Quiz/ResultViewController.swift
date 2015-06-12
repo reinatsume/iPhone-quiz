@@ -31,11 +31,9 @@ class ResultViewController: UIViewController {
     }
     
         // Do any additional setup after loading the view.
-    }
 
-     func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning() {
         didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-//GitHubテスト
+}
