@@ -9,27 +9,33 @@
 import UIKit
 
 class ResultViewController: UIViewController {
-
+     var correctAnswer:Int = 0
+    @IBOutlet var resultTextView : UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    
+    if(correctAnswer==5){
+    resultTextView.text = String("君はホームズマニアだ！")
+        }else if (correctAnswer==4){
+        resultTextView.text = String("惜しい！あと少し")
+        }else if (correctAnswer==3){
+        resultTextView.text = String("もう一度チャレンジ！")
+        }else if (correctAnswer==2){
+        resultTextView.text = String("さあもう一回！")
+        }else if (correctAnswer==1){
+        resultTextView.text = String("再チャレンジしよう！")
+        }else if (correctAnswer==0){
+        resultTextView.text = String("まだまだ程遠い！")
+        }
+    }
+    
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+     func didReceiveMemoryWarning() {
+        didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
+//GitHubテスト
